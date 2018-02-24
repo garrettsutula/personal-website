@@ -1,4 +1,189 @@
-<h1>
-  {{Title}}
-</h1>
-<input [(ngModel)]="Title">
+<div class="container">
+    <span class="mat-title">Blog Posts</span><br/><br/>
+    <mat-card>
+      <mat-card-header>
+          <mat-card-title>Ultra Value 3D Printing Part 2 - Extruder &amp; Stepper Fan Upgrade</mat-card-title>
+          <mat-card-subtitle>1/1/15</mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+          <p>
+              Dropped another upgrade into the printer with wonderful results. The stock extruder drive system doesn't put out nearly enough torque to reliably drive 1.75mm filament, <a href="http://www.thingiverse.com/thing:861046">this one</a> is a perfect replacement though! You'll need some other parts:
+              <br/>
+              <h2 class="mat-h2">Parts List</h2>
+              <ul>
+                  <li>
+                      <a href="http://www.ebay.com/itm/10x-Inline-Skateboard-Sco-oter-Ball-Bearings-Wheels-Roller-Blade-ABEC-5-608-ZZ-/321823298623?hash=item4aee29d43f:g:C44AAOSw9N1VwFX~">608zz bearing</a> - local skate shops will have them if you don't want to wait. These are generally useful to have around for making spool stands &amp; other stuff, too.
+                  </li>
+                  <li>
+                      <a href="http://www.ebay.com/itm/MK8-Drive-Gear-Filament-Pulley-RepRap-3D-Printer-Extruder-5mm-bore-MADE-IN-USA-/121561341020?hash=item1c4d9edc5c:g:yxcAAOSwhcJWGL2h">MK8 Drive Gear</a> - far beter grip on the filament. <a href="http://airtripper.com/1676/3d-printer-extruder-filament-drive-gear-review-benchmark/">Here's a benchmark</a> that proves it.
+                  </li>
+                  <li><a href="http://www.amazon.com/Drill-America-Qualtech-Threading-Uncoated/dp/B00FXK8GTO/ref=sr_1_1?ie=UTF8&qid=1451683430&sr=8-1&keywords=m5+tap">M5 Manual Tap</a> - to tap out the bowden fitting</li>
+                  <li>2mm Drill Bit - to open up the filament holes a bit</li>
+              </ul>
+              Here's what it looks like all put together:<br/>
+              <img src="/assets/img/newExtruder.png"/>
+              <br/>
+              And the print difference is quite stunning, the firm grip provided by the new extruder completely normalized the filament to the hot end and vastly improved print quality (old on left, new on right):<br/>
+              <img src="/assets/img/newResults.png" />
+              <br/><br/>
+              <h2 style="mat-h2">Next Project!</h2>
+              With that, I've moved on to my next project: designing and printing a mount for a 40mm fan to cool the stepper motor drivers. They get sort of hot so I've been running a desk fan on them but want to switch to a nice, quiet <a href="http://www.amazon.com/40x10mm-Bearing-Premium-Cooling-NF-A4x10/dp/B009NQLT0M/ref=sr_1_1?ie=UTF8&qid=1451684143&sr=8-1&keywords=noctura+40mm">40mm fan</a> as a long-term fix. I use <a href="https://www.onshape.com/">OnShape</a> to do all my modeling and I can't recommend it enough - 100% cloud-based parametric modeling with great <a href="https://www.onshape.com/learn">training videos</a> focused on making you productive with minimal time investment. <br/><br/>
+              Within a few minutes I had something that looked about right:<br/>
+              <img src="/assets/img/fanMountOnShape.png" /><br/>
+              Confident in my printer's ability to reliabiy drive filament regardless of frequent retractions, I figure it can handle something like this just fine now:<br/>
+              <img src="/assets/img/fanMountS3d.png" /><br/>
+              Yep, worked great:<br/>
+              <img src="/assets/img/fanMountPrinted.png"/><br/>
+              And it fits, perfectly, on the first try!<br/>
+              <img src="/assets/img/fanMountInstalled.png" /><br/><br/>
+              <h2 style="mat-h2">Conclusion</h2>
+              Putting a bit more time into upgrading this printer is really paying off! I only have one more upgrade left - a Mk3 heated bed - but not really in a hurry to do it since I've only had slight adhesion/warping issues. I <a href="http://www.thingiverse.com/thing:1239164">posted the design on thingiverse</a> if you're interested in trying it out! I adjusted a couple of the dimensions down from what you see in the pictures so the extra bits on the sides and top will be minimized.
+      </mat-card-content>      
+    </mat-card>    
+    <mat-card>
+        <mat-card-header>
+          <mat-card-title>
+              Ultra Value 3D Printing
+          </mat-card-title>
+          <mat-card-subtitle>
+              12/26/15
+          </mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <p>
+
+                Alright so <a href="http://lifehacker.com/this-graphic-guides-you-to-the-perfect-3d-printer-for-y-1744514657">this</a> is a pretty good guide to buying the right 3D printer for you but I bought something else. 
+
+                I didn't want to compromise on features, user community or pay more than a few hundred bucks for a printer - a not-entirely-unrealistic expectation as it turns out! So, ready to spend more time &amp; effort than money I went to Aliexpress to find my printer...<br/><br/>
+
+
+
+                <a href="http://www.aliexpress.com/item/2015-Guaranteed-100-DIY-sunhokey-prusa-i3-3d-printer-2-rolls-filament-SD-card-free/32379090327.html?ws_ab_test=searchweb201556_2_79_78_77_82_80_62,searchweb201644_0,searchweb201560_8">Here's what I bought</a>, a Sunhokey Prusa i3 for a paltry $255 w/ free shipping. Here's how it sits today:<br/>
+
+                <img src="/assets/img/printer.png" />
+
+                <br/><br/>
+
+            </p>
+
+            <h2 class="mat-h2">Analysis</h2>
+
+            <strong>Pros</strong>
+
+            <ul>
+
+                <li>$255</li>
+
+                <li>Includes 2 spools of decent quality filament</li>
+
+                <li>Based off the <a href="http://reprap.org/wiki/Prusa_i3"> Prusa i3</a> - lots of common parts, upgrades</li>
+
+                <li>Some improvements over the base design.</li>
+
+                <li>You'll learn a lot just putting it together &amp; getting it working in the beginning</li>
+
+                <li>Fair amount of popularity, good resources for assembly and upgrades (links below)</li>
+
+            </ul>
+
+            <strong>Cons</strong>
+
+            <ul>
+
+                <li>Requires assembly and configuration to get good results.</li>
+
+                <li>Similar but not the same as a Prusa i3 so some upgrades are less straightforward.</li>
+
+                <li>Some corners cut to keep costs down:</li>
+
+                <ul>
+
+                    <li>1/4" acrylic frame - fragile &amp; not the most stable but OK overall</li>
+
+                    <li>Various opportunities to improve on axis stablization due to limitation of acrylic frame</li>
+
+                </ul>
+
+                <li>Needs upgrades to really shine (see below)</li>
+
+            </ul>
+
+            <p>I had a number of upgrades planned to help ensure I was addressing the key shortcomings of the printer right off the bat. Some of these require access to a way to make 3D printed parts</p>
+
+            <ul>
+
+                <li><strong>E3D v6 hotend from Aliexpress</strong> - Knockoff, but still a significant upgrade from the stock hot end both in quality and performance. Worth it to print high temp filaments like PETG.</li>
+
+                <li><strong>Borosilicate glass plate</strong> - the best print surface, the heated bed itself is sort of crappy so heating won't be 100% even but glass is SO EASY to work with so worth downsides.</li>
+
+                <li><strong>3D Printed X,Y, and Z Axis Stabilization Parts</strong> - these will DRASTICALLY improve print quality and should be done as you're assembling your printer for the first time.</li>
+
+            </ul>
+
+            <h2 class="mat-h2">Assembly and Operation</h2>
+
+            <p>
+
+                Assembly was done in one week across three nights. On the third night, working through assembling and rough calibration I was able to achieve pretty great results within the first handful of prints:<br/>
+
+                <img src="/assets/img/progression.png"/><br/>
+
+                With the upgraded hot end, printing parts in my favorite material - odorless, extremely tough PETG - was straightforward:<br/>
+
+                <img src="/assets/img/petg.png" /><br/>
+
+                <img src="/assets/img/petg2.png" /><br/>
+
+                The printer runs the Marlin firmware, which I flashed up to a version that supports ColorPrint so I could realize plans for the holidays:<br/>
+
+                <img src="/assets/img/snowflake.png" /><br/>
+
+                Overall, works great and I was able to print out a bunch of customized snowflakes as presents for family and friends over the holidays. Looking forward, I'm excited to use it to do more artistic projects since I already do plenty of design and printing for practical applications.
+
+                <br/><br/>
+
+                If I were to do it again, I'd source individual parts for a prusa or another open source printer design but it'd be a lot harder to pull off without all the knowlege I've accumulated building this one. Either way, looking forward to continuing the upgrades and seeing where 3D printing takes me in 2016.  
+
+            </p>
+
+            <h2 class="mat-h2">Other Resources</h2>
+
+            <strong>Parts and Upgrades</strong>
+
+            <ul>
+
+                <li><a href="http://www.thingiverse.com/thing:1105527">Z and X axes stabilization</a></li>
+
+                <li><a href="http://www.thingiverse.com/thing:736145">Y axis stabilization</a></li>
+
+                <li><a href="http://www.aliexpress.com/item/3D-printer-Borosilicate-glass-for-MK2B-PCB-Heatbed-Reprap-Prusa-213-200-3mm-steel/32352715582.html?ws_ab_test=searchweb201556_2_79_78_77_82_80_62,searchweb201644_0,searchweb201560_8">Glass Plate</a></li>
+
+                <li><a href="http://www.aliexpress.com/item/3D-Printer-J-head-Hotend-E3D-V5-with-Single-Cooling-Fan-for-1-75mm-3-0mm/32336836595.html?ws_ab_test=searchweb201556_2_79_78_77_82_80_62,searchweb201644_0,searchweb201560_8">Knockoff e3d v6 hotend</a></li>
+
+                <li><a href="http://www.thingiverse.com/search?q=sunhokey&sa=">Sunhokey Thingiverse Search Results</a> - lots of good stuff in here to consider for your printer. I'm not sure I'd do a direct drive upgrade, I don't think the frame can handle it and maintain speed.</li>
+
+
+
+            </ul>
+
+            <strong>Upgrades</strong>
+
+            <ul>
+
+                <li><a href="https://www.youtube.com/watch?v=QH3Ozrwtfmw&list=PLKwWpCWIZu32oQLIDZva9rdffMNUz0JRl">Hiboson Sunhokey Prusa Assembly Series</a> - good series that covers the complexities and pitfalls of assembling the sunhokey printer very nicely.</li>
+
+                <li><a href="http://reprap.org/wiki/Triffid_Hunter's_Calibration_Guide">Printer Calibration Guide</a> - for tuning the printer movements to be perfect</li>
+
+                <li><a href="http://forum.makergear.com/viewtopic.php?f=3&t=1964">Print Profile Calbiration Guide</a> - for tuning the print result to be perfect</li>
+
+                <li><a href="http://reprap.org/wiki/G-code">G-Code Guide</a></li>
+
+                <li><a href="http://forums.reprap.org/read.php?262,557600">Bowden tuning guide</a> - for PETG specifically but settings apply to varying degrees for all plastics</li>
+
+                <li><a href="http://reprap.org/wiki/Prusa_i3_Buyers_Guide">Prusa i3 Buyer's Guide</a> - Maybe just source all these parts individually.</li>
+
+            </ul>
+        </mat-card-content>
+    </mat-card>
+    
+</div>

@@ -1,3 +1,12 @@
-h1 {
-    color:red;
+.container{
+    margin-left:16%;
+    margin-right:16%;
+    margin-top:20px;
+}
+img {
+    max-width:100%;
+}
+
+mat-card{
+    margin-bottom: 20px;
 }
